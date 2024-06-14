@@ -92,6 +92,16 @@ input[type="password"] {
     width: 100%;
     margin-bottom: 15px;
 }
+.loginBtn {
+    background-color: #00B300;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 15px;
+}
 
 .remember-me {
     text-align: left;

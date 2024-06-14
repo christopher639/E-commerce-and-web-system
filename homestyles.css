@@ -101,12 +101,7 @@ nav ul li a {
     margin-bottom: 30px;
     color: #666;
 }
-.hero-buttons {
-    justify-content: space-around;
-    margin-top: 20px;
-    display: flex;
-    flex-wrap: wrap;
-}
+
 .hero-buttons .btn {
     padding: 15px 30px;
     border: none;
@@ -119,7 +114,7 @@ nav ul li a {
 .hero-buttons .btn.green {
     background-color: green;
     color: white;
-    width: 120px;
+    
 }
 .hero-buttons .btn.red {
     background-color: red;
