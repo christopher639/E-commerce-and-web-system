@@ -8,29 +8,43 @@
 </head>
 <body>
     <header>
-        <div class="header-content">
-            <div class="logo">Fast Air Market</div>
-            <div class="search-bar">
-                <input type="text" placeholder="Search products...">
-            </div>
-            <div class="header-icons">
-                <span class="icon">❤️<span class="badge">12</span></span>
-                <span class="iconlogin"><a href="signin.html">👤 Login</a></span>
-                <span class="icon">🛒<span class="badge">2</span></span>
-            </div>
-        </div>
         <nav>
             <ul>
                 <li><a href="#">Products</a></li>
                 <li><a href="#">SALE</a></li>
-                <li><a href="#">Inspiration</a></li>
-                <li><a href="#">Brands</a></li>
-                <li><a href="#">Outlet</a></li>
+
+
+
+                <li class="dropdown">
+                    <a href="#">More <span class="arrow">&#9660;</span></a>
+                    <ul class="dropdown-content">
+                        <li><a href="#">Inspiration</a></li>
+                        <li><a href="#">Brands</a></li>
+                        <li><a href="#">Outlet</a></li>
+                        <li><a href="#">Outlet</a></li>
+                    </ul>
+                </li>
+                <!--search bar-->
+                <div class="search-bar">
+                    <input type="text" placeholder="Search products...">
+                </div>
                 <li><a href="#">Shipping</a></li>
                 <li><a href="#">Returns & Warranty</a></li>
                 <li><a href="#">Contact</a></li>
+
+                <div class="header-icons">
+                    <span class="icon">❤️<span class="badge">12</span></span>
+                    <span class="iconlogin"><a href="signin.html">👤 Login</a></span>
+                    <span class="icon">🛒<span class="badge">2</span></span>
+                </div>
             </ul>
         </nav>
+        <div class="header-content">
+            <div class="logo">Fast Air Market</div>
+           
+           
+        </div>
+      
     </header>
     <main>
         <section class="hero">
