@@ -44,6 +44,11 @@ body {
     margin-left: 20px;
     position: relative;
     cursor: pointer;
+    margin: 10px;
+}
+.iconlogin a{
+    text-decoration: none;
+
 }
 
 .header-icons .badge {
