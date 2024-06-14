@@ -114,7 +114,10 @@ nav ul li a {
     background-color: green;
     color: white;
 }
-
+.hero-buttons .btn.red {
+    background-color: red;
+    color: white;
+}
 .hero-buttons .btn.outline {
     background-color: white;
     color: green;
