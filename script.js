@@ -1,7 +1,14 @@
 document.addEventListener('DOMContentLoaded', (event) => {
-    const submitButton = document.getElementsByClassName('submit-btn');
+    console.log("DOM fully loaded and parsed");
 
-    submitButton.addEventListener('click', () => {
-        window.location.href = 'index.html';
-    });
+    const submitBtn = document.querySelector('.submitBtn');
+
+    if (submitBtn) {
+        submitBtn.addEventListener('click', () => {
+            console.log("Login button clicked");
+            window.location.href = 'index.html';
+        });
+    } else {
+        console.error("Login button not found");
+    }
 });
