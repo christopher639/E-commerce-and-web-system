@@ -34,11 +34,12 @@ body {
     font-size: 24px;
     font-weight: bold;
     color: green;
+    
 }
 .search-bar{
     position: relative;
     display: flex;
-    
+  
 }
 .side-bar{
     margin-top: 100px;
@@ -48,12 +49,25 @@ body {
     position: fixed;
 
 }
+.search-bar-min{
+    background-color: green;
+    padding: 30px;
+    justify-content: center;
 
+}
+.search-bar-min input{
+    padding: 5px;
+    margin-top: 0;
+    width: 70%;
+    margin-right: 10px;
+    
+}
 .search-bar input {
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
     width: 300px;
+    height: 40px;
 }
 
 .header-icons {
@@ -95,6 +109,7 @@ nav li a:hover {
 
 .dropdown {
     position: relative;
+    margin-top: 24px;
 }
 
 .dropdown-content {
@@ -125,15 +140,14 @@ nav li a:hover {
     margin-left: 5px;
 }
 
-
 nav {
     background-color: green;
     color: white;
     padding: 10px 0;
     position: fixed;
-    
+    height: 60px;
     width: 100%;
-    padding-top: 10;
+    padding-top: 1;
 }
 
 nav ul {
@@ -174,14 +188,24 @@ nav ul li a {
     margin-bottom: 30px;
     color: #666;
 }
+.hero-buttons{
+    justify-content: center;
+    border-radius: 10px;
+
+}
 
 .hero-buttons .btn {
+    border-radius: 10px;
     padding: 15px 30px;
     border: none;
     cursor: pointer;
     font-size: 16px;
     margin: 0 10px;
+   
     
+}
+.hero-buttons .btn:hover{
+    transform: scale(1.1);
 }
 
 .hero-buttons .btn.green {
@@ -204,18 +228,48 @@ nav ul li a {
     justify-content: space-around;
     flex-wrap: wrap;
     padding: 20px;
+    
 }
 
+
+  .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+            
+        }
+
+        .box {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 1.2em;
+            width: 150px;
+            border-radius: 5px;
+            
+        }
+
+
+
 .category {
-    text-align: center;
+    text-align: left;
     flex: 1;
-    margin: 10px;
+    margin: 5px;
+    width: 150px;
     background-color: white;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border: 1px solid green;
 }
-
+.category:hover {
+    transform: scale(1.1);
+}
+.container a{
+    text-decoration: none;
+}
 .category img {
     max-width: 100%;
     height: auto;
@@ -247,7 +301,7 @@ nav ul li a {
 }
 
 .product-list {
-    display: flex;
+    display:flexbox;
     justify-content: space-between;
     flex-wrap: wrap;
     padding: 20px;
@@ -259,7 +313,8 @@ nav ul li a {
 .product {
      text-align: center;
     flex: 1;
-    margin: 10px;
+    width: 40%;
+    margin: 5px;
     background: #f9f9f9;
     padding: 20px;
     border-radius: 10px;
@@ -285,13 +340,14 @@ nav ul li a {
 }
 
 .product-name {
-    font-size: 16px;
+    font-size: 10px;
     margin: 10px 0;
+    font-weight: bold;
 }
 
 .price {
     color: #0a0;
-    font-size: 18px;
+    font-size: 10px;
     font-weight: bold;
 }
 
@@ -309,12 +365,13 @@ nav ul li a {
 
 .promo-box {
     align-content: start;
-    background: #f9f9f9;
+    background: white;
     padding: 20px;
     text-align: center;
     margin: 20px 0;
     font-size: xx-large;
     font-weight: 700;
+    width: 100%;
 }
 
 .promo-box h2 {
@@ -416,11 +473,16 @@ h2, h3 {
 }
 
 .category-discounts3, .outlet-discounts3 {
-    background-color: #f9f9f9;
+    background-color:white;
     padding: 20px;
     border: 1px solid #ddd;
-    flex: 1 1 calc(50% - 20px);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     text-align: center;
+    justify-content: center;
+    align-items: center;
+    
 }
 
 .category-discounts3 .discounts3, .outlet-discounts3 .discounts3 {
@@ -591,7 +653,9 @@ h4{
         flex: 1 1 calc(50% - 20px);
     }
 }
-
+@media (max-width: 768px) {
+    
+}
 @media (max-width: 480px) {
     .product {
         flex: 1 1 100%;
@@ -603,6 +667,10 @@ h4{
 @media (max-width: 768px) {
     .top-bar {
       display: none;
+
+    }
+    .hero{
+        display: none;
     }
     
   }

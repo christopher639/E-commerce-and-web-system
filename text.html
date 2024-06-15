@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Boxes</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 10px;
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #4CAF50;
+            border-radius: 10px;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+
+        .box a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        .box:hover {
+            transform: scale(1.1);
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"><a href="#">Link 1</a></div>
+        <div class="box"><a href="#">Link 2</a></div>
+        <div class="box"><a href="#">Link 3</a></div>
+        <div class="box"><a href="#">Link 4</a></div>
+        <div class="box"><a href="#">Link 5</a></div>
+        <div class="box"><a href="#">Link 6</a></div>
+        <div class="box"><a href="#">Link 7</a></div>
+        <div class="box"><a href="#">Link 8</a></div>
+        <div class="box"><a href="#">Link 9</a></div>
+        <div class="box"><a href="#">Link 10</a></div>
+    </div>
+</body>
+</html>
