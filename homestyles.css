@@ -41,6 +41,12 @@ body {
     display: flex;
   
 }
+.promo-box:hover{
+    transform: scale(1.1);
+}
+.promo-box a{
+    text-decoration: none;
+}
 .side-bar{
     margin-top: 100px;
     width: 150px;
