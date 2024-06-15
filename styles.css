@@ -4,9 +4,18 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    margin: 0;
-    background-color: #666;
+    height: 88vh;
+    margin: 8px;
+    background: linear-gradient(
+        45deg, 
+        #4c794c 25%, 
+        #008000 25%, 
+        #008000 50%, 
+        #1e591e 50%, 
+        #00ff84 75%, 
+        #008000 75%, 
+        #008000 100%
+    );
 }
 
 .container {
@@ -16,7 +25,6 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 350px;
 }
-
 .form-container {
     text-align: center;
 }
