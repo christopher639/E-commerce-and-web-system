@@ -12,7 +12,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
         console.error("Login button not found");
     }
 });
-
 document.addEventListener('DOMContentLoaded', (event) => {
     console.log("DOM fully loaded and parsed");
 
@@ -26,5 +25,19 @@ document.addEventListener('DOMContentLoaded', (event) => {
         });
     } else {
         console.error("Login button not found");
+    }
+});
+
+document.addEventListener('DOMContentLoaded', (event) => {
+    console.log("DOM fully loaded and parsed");
+
+    const allproducts = document.querySelector('.btnOutline');
+
+    if (allproducts) {
+        allproducts.addEventListener('click', () => {
+            window.location.href = 'allproducts.html';
+        });
+    } else {
+        console.error("All products not found");
     }
 });

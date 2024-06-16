@@ -18,7 +18,8 @@ body {
 }
 .top-bar{
     padding-top: 10px;
-    margin-top: 100px;
+    
+
 }
 .header-icons-min{
     display: flex;
@@ -112,6 +113,16 @@ body {
     padding: 2px 5px;
     font-size: 12px;
 }
+.cart-icon .badge {
+    position: absolute;
+    top: 10px;
+    right:40px;
+    background:red;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 5px;
+    font-size: 12px;
+}
 
 
 
@@ -121,10 +132,16 @@ nav li a:hover {
 
 .dropdown {
     position: relative;
-    margin-top: 24px;
+    margin-top: 2px;
+}
+.dropdown-content .accounts-link{
+    font-size: 15px;
+    text-align: left;
+    
 }
 
 .dropdown-content {
+    
     display: none;
     position: absolute;
     background-color:green;
@@ -216,20 +233,46 @@ nav ul li a {
    
     
 }
+.hero-buttons .btnOutline {
+    border-radius: 10px;
+    padding: 15px 30px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 0 10px;
+}
+
+.hero-buttons .btngreen {
+    border-radius: 10px;
+    padding: 15px 30px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 0 10px;
+}
+
+.hero-buttons .btnred {
+    border-radius: 10px;
+    padding: 15px 30px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 0 10px;
+}
 .hero-buttons .btn:hover{
     transform: scale(1.1);
 }
 
-.hero-buttons .btn.green {
+.hero-buttons .btngreen {
     background-color: green;
     color: white;
     
 }
-.hero-buttons .btn.red {
+.hero-buttons .btnred {
     background-color: red;
     color: white;
 }
-.hero-buttons .btn.outline {
+.hero-buttons .btnOutline {
     background-color: white;
     color: green;
     border: 2px solid green;
@@ -268,7 +311,7 @@ nav ul li a {
 .category {
     text-align: left;
     flex: 1;
-    margin: 5px;
+    margin: 1px;
     width: 150px;
     background-color: white;
     padding: 20px;
@@ -482,6 +525,7 @@ h2, h3 {
     flex-wrap: wrap;
     gap: 20px;
     margin-top: 40px;
+    justify-content: center;
 }
 
 .category-discounts3, .outlet-discounts3 {
@@ -489,11 +533,11 @@ h2, h3 {
     padding: 20px;
     border: 1px solid #ddd;
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
-    text-align: center;
     justify-content: center;
-    align-items: center;
+    margin-bottom: 50px;
+    width: 40%;
+    text-align: center;
     
 }
 
@@ -501,6 +545,7 @@ h2, h3 {
     font-size: 40px;
     color: green;
     font-weight: bold;
+    
 }
 
 .shop-nows3, .browse-productss3 {
@@ -625,7 +670,7 @@ h4{
 .social-media a {
     display: inline-block;
     margin: 0 5px;
-    color: green;
+    color: white;
     text-decoration: none;
 }
 
@@ -676,7 +721,7 @@ h4{
         flex: 1 1 100%;
     }
 }
-@media (max-width: 768px) {
+@media (max-width: 600px) {
     .top-bar {
       display: none;
 
@@ -724,6 +769,7 @@ h4{
 
 .top-bar{
     margin-top: -20px;
+    
 }
 
 /* Media query for phones */
@@ -741,7 +787,7 @@ h4{
 
 
   
-@media (max-width: 768px) {
+@media (max-width: 600px) {
     .header-content {
         flex-direction: column;
         text-align: center;

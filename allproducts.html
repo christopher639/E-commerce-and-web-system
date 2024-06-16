@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fast Air Market</title>
+    <link rel="stylesheet" href="homestyles.css">
+</head>
+<body>
+    <nav class="top-bar">
+        <ul>
+            <li class="dropdown"><a href="index.html">Home</a></li>
+            <li class="dropdown">
+                <a href="#">All Categories<span class="arrow">&#9660;</span></a>
+                <ul class="dropdown-content">
+                    <li><a href="#">Laptops $ Desktops</a></li>
+                    <li><a href="#">Spair parts</a></li>
+                    <li><a href="#">Laptop bags</a></li>
+                    <li><a href="#">Memory Devices</a></li>
+                    <li><a href="#">Printers</a></li>
+                    <li><a href="#">Vention</a></li>
+                    <li><a href="#">Accessories</a></li>
+                    <li><a href="#">Networking'</a></li>
+                </ul>
+            </li>
+
+            <li class="dropdown">
+                <a href="#">More <span class="arrow">&#9660;</span></a>
+                <ul class="dropdown-content">
+                    <li><a href="#">Inspiration</a></li>
+                    <li><a href="#">Brands</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Outlet'</a></li>
+                    
+
+                </ul>
+            </li>
+            <!--search bar-->
+            <div class="search-bar">
+                <input type="text" placeholder="Search products...">
+            </div>
+            <li><a href="#">Shipping</a></li>
+            <li><a href="#">Returns & Warranty</a></li>
+            <li><a href="#">Contact</a></li>
+
+            <div class="header-icons">
+                <span class="icon">
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="white"><path d="M720-120H280v-520l280-280 50 50q7 7 11.5 19t4.5 23v14l-44 174h258q32 0 56 24t24 56v80q0 7-2 15t-4 15L794-168q-9 20-30 34t-44 14Zm-360-80h360l120-280v-80H480l54-220-174 174v406Zm0-406v406-406Zm-80-34v80H160v360h120v80H80v-520h200Z"/></svg>
+                    </a>
+                    <span class="badge">0</span></span>
+
+                    <li class="dropdown">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="white"><path d="M234-276q51-39 114-61.5T480-360q69 0 132 22.5T726-276q35-41 54.5-93T800-480q0-133-93.5-226.5T480-800q-133 0-226.5 93.5T160-480q0 59 19.5 111t54.5 93Zm246-164q-59 0-99.5-40.5T340-580q0-59 40.5-99.5T480-720q59 0 99.5 40.5T620-580q0 59-40.5 99.5T480-440Zm0 360q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q53 0 100-15.5t86-44.5q-39-29-86-44.5T480-280q-53 0-100 15.5T294-220q39 29 86 44.5T480-160Zm0-360q26 0 43-17t17-43q0-26-17-43t-43-17q-26 0-43 17t-17 43q0 26 17 43t43 17Zm0-60Zm0 360Z"/></svg>
+                        </a></span>
+                        <ul class="dropdown-content">
+                            <li class="accounts-link"><a href="signin.html">Sign in</a></li>
+                            <li class="accounts-link"><a href="signup.html">Creat account</a></li>
+                            <li class="accounts-link"><a href="#">Sign Out</a></li>
+                        </ul>
+                    </li>
+                <span class="icon">
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="white"><path d="M280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM246-720l96 200h280l110-200H246Zm-38-80h590q23 0 35 20.5t1 41.5L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68-39.5t-2-78.5l54-98-144-304H40v-80h130l38 80Zm134 280h280-280Z"/></svg>
+                    </a>
+                    <span class="badge">0</span></span>
+            </div>
+        </ul>
+    </nav>
+   
+   
+       <!--Side bar icon and navigation-->
+       <div class="navbar-side">
+        <a href="index.html">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="white"><path d="M240-200h120v-240h240v240h120v-360L480-740 240-560v360Zm-80 80v-480l320-240 320 240v480H520v-240h-80v240H160Zm320-350Z"/></svg>
+        </a>
+        <a href="allproducts.html">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="white"><path d="m260-520 220-360 220 360H260ZM700-80q-75 0-127.5-52.5T520-260q0-75 52.5-127.5T700-440q75 0 127.5 52.5T880-260q0 75-52.5 127.5T700-80Zm-580-20v-320h320v320H120Zm580-60q42 0 71-29t29-71q0-42-29-71t-71-29q-42 0-71 29t-29 71q0 42 29 71t71 29Zm-500-20h160v-160H200v160Zm202-420h156l-78-126-78 126Zm78 0ZM360-340Zm340 80Z"/></svg>
+        </a>
+        <a href="#services">Services</a>
+        <a href="#about">Sell</a>
+
+        <a href="signin.html">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="white"><path d="M234-276q51-39 114-61.5T480-360q69 0 132 22.5T726-276q35-41 54.5-93T800-480q0-133-93.5-226.5T480-800q-133 0-226.5 93.5T160-480q0 59 19.5 111t54.5 93Zm246-164q-59 0-99.5-40.5T340-580q0-59 40.5-99.5T480-720q59 0 99.5 40.5T620-580q0 59-40.5 99.5T480-440Zm0 360q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q53 0 100-15.5t86-44.5q-39-29-86-44.5T480-280q-53 0-100 15.5T294-220q39 29 86 44.5T480-160Zm0-360q26 0 43-17t17-43q0-26-17-43t-43-17q-26 0-43 17t-17 43q0 26 17 43t43 17Zm0-60Zm0 360Z"/></svg>
+        </a>
+        <div class="cart-icon">
+                <span class="icon">
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="white"><path d="M280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM246-720l96 200h280l110-200H246Zm-38-80h590q23 0 35 20.5t1 41.5L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68-39.5t-2-78.5l54-98-144-304H40v-80h130l38 80Zm134 280h280-280Z"/></svg>
+                    </a>
+                    <span class="badge">0</span></span>
+        </div>
+    </div>
+       <!--
+         <div class="header-content">
+            <div class="logo">Fast Air Market</div> 
+            <div class="header-icons">
+                <span class="icon">❤️<span class="badge">12</span></span>
+                <span class="iconlogin"><a href="signin.html">👤 Login</a></span>
+                <span class="icon">🛒<span class="badge">2</span></span>
+            </div>
+        </div>
+        -->
+        <section class="hero">
+           
+        </section>
+        <div class="search-bar-min">
+            <input type="text" placeholder="Search products...">
+        </div>
+        
+       <div class="big-container">
+        <div class="container">
+            <div class="category">
+                <img src="lightkey.jpg" alt="Bestsellers">
+                <p>Backlite keyboard</p>
+                <div class="price">Ksh 3200<span class="original-price">Ksh4300</span> <span class="discount">-20%</span></div>
+            </div>
+            <div class="category">
+                <img src="key.jpg" alt="Bestsellers">
+                <p>Keyboard</p>
+                <div class="price">Ksh 1099<span class="original-price">Ksh 1500</span> <span class="discount">-20%</span></div>
+            </div>
+            <div class="category">
+                <img src="formatprinter.jpg" alt="Bestsellers">
+                <p>Format Printer</p>
+                <div class="price">Ksh 450,200<span class="original-price">Ksh 463,300</span> <span class="discount">-20%</span></div>
+            </div>
+            <div class="category">
+                <img src="besthp.jpg" alt="Bestsellers">
+                <p>Hp 16GB Ram $ 512GB Rom</p>
+                <div class="price">Ksh 99,999<span class="original-price">Ksh 110,000</span> <span class="discount">-20%</span></div>
+            </div>
+            <div class="category">
+                <img src="lightkey.jpg" alt="Bestsellers">
+                <p>Back Lite</p>
+                <div class="price">Ksh 3300<span class="original-price">Ksh 3790</span> <span class="discount">-20%</span></div>
+            </div>
+            <div class="category">
+                <img src="key.jpg" alt="Bestsellers">
+                <p>Keyboard</p>
+                <div class="price">Ksh 700<span class="original-price">Ksh 1300</span> <span class="discount">-20%</span></div>
+            </div>
+            <div class="category">
+                <img src="formatprinter.jpg" alt="Bestsellers">
+                <p>1.8m format printer</p>
+                <div class="price">Ksh 450,200<span class="original-price">Ksh 463,300</span> <span class="discount">-20%</span></div>
+            </div>
+            <div class="category">
+                <img src="besthp.jpg" alt="Bestsellers">
+                <p>HP laptop </p>
+                <div class="price">Ksh 45200<span class="original-price">Ksh 63,300</span> <span class="discount">-20%</span></div>
+            </div>
+            <div class="category">
+                <img src="lagerprinter.jpg" alt="Bestsellers">
+                <p>Laser Printer</p>
+                <div class="price">Ksh 450,200<span class="original-price">Ksh 463,300</span> <span class="discount">-20%</span></div>
+            </div>
+    
+            <div class="category">
+                <img src="litehp.jpg" alt="Seasonal">
+                <p>Laser Printer</p>
+                <div class="price">Ksh 450,000<span class="original-price">Ksh 500,000</span> <span class="discount">-20%</span></div>
+            </div>
+            <div class="category">
+                <img src="lightkey.jpg" alt="Category">
+                <p>Lite Keyboard</p>
+                <div class="price">Ksh 10,000<span class="original-price">Ksh 15,000</span> <span class="discount">-20%</span></div>
+            </div>
+            <div class="category">
+                <img src="besthp.jpg" alt="Outlet">
+                <p>Hp laptop</p>
+                <div class="price">Ksh 90,000<span class="original-price">Ksh 99,000</span> <span class="discount">-20%</span></div>
+            </div>
+            <div class="category">
+                <img src="gmouse.jpg" alt="Category">
+                <p>Mouse</p>
+                <div class="price">Ksh 450<span class="original-price">Ksh 500</span> <span class="discount">-20%</span></div>
+            </div>
+            <div class="category">
+                <img src="key.jpg" alt="Outlet">
+                <p>Kyboard</p>
+                <div class="price">Ksh 4500<span class="original-price">Ksh 5000</span> <span class="discount">-20%</span></div>
+            </div>
+            <div class="category">
+                <img src="mouse.jpg" alt="Category">
+                <p>Mouse</p>
+                <div class="price">Ksh 450<span class="original-price">Ksh 500,</span> <span class="discount">-20%</span></div>
+            </div> 
+            <div class="category">
+                <img src="colorlaserjet.jpg" alt="Category">
+                <p>Color Laser Printer</p>
+                <div class="price">Ksh 450,000<span class="original-price">Ksh 500,000</span> <span class="discount">-20%</span></div>
+            </div> 
+
+
+
+            <div class="category">
+                <img src="lightkey.jpg" alt="Bestsellers">
+                <p>BackLite Keyboard</p>
+                
+            </div>
+            <div class="category">
+                <img src="key.jpg" alt="Bestsellers">
+                <p>Keyboard</p>
+    
+            </div>
+            <div class="category">
+                <img src="formatprinter.jpg" alt="Bestsellers">
+                <p>Format Printer</p>
+               
+            </div>
+            <div class="category">
+                <img src="besthp.jpg" alt="Bestsellers">
+                <p>Hp laptops</p>
+                
+            </div>
+            <div class="category">
+                <img src="lagerprinter.jpg" alt="Bestsellers">
+                <p>Multi Printers</p>
+               
+            </div>
+    
+            <div class="category">
+                <img src="litehp.jpg" alt="Seasonal">
+                <p>Convertible Hp laptops</p>
+            </div>
+            <div class="category">
+                <img src="lightkey.jpg" alt="Category">
+                <p>Keyboard</p>
+            </div>
+            <div class="category">
+                <img src="mackbooks.jpg" alt="Outlet">
+                <p>Macbook Laptops</p>
+            </div>
+            <div class="category">
+                <img src="hplaptop.jpg" alt="Category">
+                <p>Hp laptops</p>
+            </div>
+            <div class="category">
+                <img src="key.jpg" alt="Outlet">
+                <p>Keyboard</p>
+            </div>
+            <div class="category">
+                <img src="mouse.jpg" alt="Category">
+                <p>Mause</p>
+            </div> 
+            <div class="category">
+                <img src="colorlaserjet.jpg" alt="Category">
+                <p>Laser Printers</p>
+            </div> 
+            <div class="category">
+                <img src="gmouse.jpg" alt="Category">
+                <p>Lite mouse</p>
+            </div>
+            <div class="category">
+                <img src="key.jpg" alt="Outlet">
+                <p>Keyboard</p>
+            </div>
+            <div class="category">
+                <img src="mouse.jpg" alt="Category">
+                <p>Mouse</p>
+            </div> 
+            <div class="category">
+                <img src="colorlaserjet.jpg" alt="Category">
+                <p>Printers</p>
+            </div> 
+    </div>
+</div>
+<!--SECTION 3-->
+       <a href="#">
+        <div class="promo-box">
+            <h2>Promo box</h2>
+            <div class="discount">UP TO 50%</div>
+            <h2>Discount on products from Category</h2>
+            <a href="#" class="shop-now">SHOP NOW</a>  
+       </div>
+       </a>
+                <h2>Category highlights</h2>
+                    <div class="container">
+                        <div class="category">
+                            <img src="lightkey.jpg" alt="Bestsellers">
+                            <p>Backlite keyboard</p>
+                            <div class="price">Ksh 3200<span class="original-price">Ksh4300</span> <span class="discount">-20%</span></div>
+                        </div>
+                        <div class="category">
+                            <img src="key.jpg" alt="Bestsellers">
+                            <p>Keyboard</p>
+                            <div class="price">Ksh 1099<span class="original-price">Ksh 1500</span> <span class="discount">-20%</span></div>
+                        </div>
+                        <div class="category">
+                            <img src="formatprinter.jpg" alt="Bestsellers">
+                            <p>Format Printer</p>
+                            <div class="price">Ksh 450,200<span class="original-price">Ksh 463,300</span> <span class="discount">-20%</span></div>
+                        </div>
+                        <div class="category">
+                            <img src="besthp.jpg" alt="Bestsellers">
+                            <p>Hp 16GB Ram $ 512GB Rom</p>
+                            <div class="price">Ksh 99,999<span class="original-price">Ksh 110,000</span> <span class="discount">-20%</span></div>
+                        </div>
+                        <div class="category">
+                            <img src="lightkey.jpg" alt="Bestsellers">
+                            <p>Back Lite</p>
+                            <div class="price">Ksh 3300<span class="original-price">Ksh 3790</span> <span class="discount">-20%</span></div>
+                        </div>
+                        <div class="category">
+                            <img src="key.jpg" alt="Bestsellers">
+                            <p>Keyboard</p>
+                            <div class="price">Ksh 700<span class="original-price">Ksh 1300</span> <span class="discount">-20%</span></div>
+                        </div>
+                        <div class="category">
+                            <img src="formatprinter.jpg" alt="Bestsellers">
+                            <p>1.8m format printer</p>
+                            <div class="price">Ksh 450,200<span class="original-price">Ksh 463,300</span> <span class="discount">-20%</span></div>
+                        </div>
+                        <div class="category">
+                            <img src="besthp.jpg" alt="Bestsellers">
+                            <p>HP laptop </p>
+                            <div class="price">Ksh 45200<span class="original-price">Ksh 63,300</span> <span class="discount">-20%</span></div>
+                        </div>
+                        <div class="category">
+                            <img src="lagerprinter.jpg" alt="Bestsellers">
+                            <p>Laser Printer</p>
+                            <div class="price">Ksh 450,200<span class="original-price">Ksh 463,300</span> <span class="discount">-20%</span></div>
+                        </div>
+                
+                        <div class="category">
+                            <img src="litehp.jpg" alt="Seasonal">
+                            <p>Laser Printer</p>
+                            <div class="price">Ksh 450,000<span class="original-price">Ksh 500,000</span> <span class="discount">-20%</span></div>
+                        </div>
+                        <div class="category">
+                            <img src="lightkey.jpg" alt="Category">
+                            <p>Lite Keyboard</p>
+                            <div class="price">Ksh 10,000<span class="original-price">Ksh 15,000</span> <span class="discount">-20%</span></div>
+                        </div>
+                        <div class="category">
+                            <img src="besthp.jpg" alt="Outlet">
+                            <p>Hp laptop</p>
+                            <div class="price">Ksh 90,000<span class="original-price">Ksh 99,000</span> <span class="discount">-20%</span></div>
+                        </div>
+                        <div class="category">
+                            <img src="gmouse.jpg" alt="Category">
+                            <p>Mouse</p>
+                            <div class="price">Ksh 450<span class="original-price">Ksh 500</span> <span class="discount">-20%</span></div>
+                        </div>
+                        <div class="category">
+                            <img src="key.jpg" alt="Outlet">
+                            <p>Kyboard</p>
+                            <div class="price">Ksh 4500<span class="original-price">Ksh 5000</span> <span class="discount">-20%</span></div>
+                        </div>
+                        <div class="category">
+                            <img src="mouse.jpg" alt="Category">
+                            <p>Mouse</p>
+                            <div class="price">Ksh 450<span class="original-price">Ksh 500,</span> <span class="discount">-20%</span></div>
+                        </div> 
+                        <div class="category">
+                            <img src="colorlaserjet.jpg" alt="Category">
+                            <p>Color Laser Printer</p>
+                            <div class="price">Ksh 450,000<span class="original-price">Ksh 500,000</span> <span class="discount">-20%</span></div>
+                        </div> 
+                </div>
+                <a href="#" class="browse-productss3">BROWSE ALL PRODUCTS</a>
+            <section class="discountss3">
+                <div class="category-discounts3">
+                  <h3>Category</h3>
+                    <p>UP TO</p>
+                    <p class="discounts3">25%</p>
+                    <p>discount on products from Category</p><br>
+                    <a href="#" class="shop-nows3">SHOP NOW</a>
+                </div>
+                <div class="outlet-discounts3">
+                    <h3>Outlet</h3>
+                   <p>UP TO</p>
+                    <p class="discounts3">50%</p>
+                    <p>discount on all products</p>
+                    <a href="#" class="browse-productss3">BROWSE PRODUCTS</a>
+                </div>
+            </section>
+
+
+            <div class="container">
+                <div class="category">
+                    <img src="lightkey.jpg" alt="Bestsellers">
+                    <p>Backlite keyboard</p>
+                    <div class="price">Ksh 3200<span class="original-price">Ksh4300</span> <span class="discount">-20%</span></div>
+                </div>
+                <div class="category">
+                    <img src="key.jpg" alt="Bestsellers">
+                    <p>Keyboard</p>
+                    <div class="price">Ksh 1099<span class="original-price">Ksh 1500</span> <span class="discount">-20%</span></div>
+                </div>
+                <div class="category">
+                    <img src="formatprinter.jpg" alt="Bestsellers">
+                    <p>Format Printer</p>
+                    <div class="price">Ksh 450,200<span class="original-price">Ksh 463,300</span> <span class="discount">-20%</span></div>
+                </div>
+                <div class="category">
+                    <img src="besthp.jpg" alt="Bestsellers">
+                    <p>Hp 16GB Ram $ 512GB Rom</p>
+                    <div class="price">Ksh 99,999<span class="original-price">Ksh 110,000</span> <span class="discount">-20%</span></div>
+                </div>
+                <div class="category">
+                    <img src="lightkey.jpg" alt="Bestsellers">
+                    <p>Back Lite</p>
+                    <div class="price">Ksh 3300<span class="original-price">Ksh 3790</span> <span class="discount">-20%</span></div>
+                </div>
+                <div class="category">
+                    <img src="key.jpg" alt="Bestsellers">
+                    <p>Keyboard</p>
+                    <div class="price">Ksh 700<span class="original-price">Ksh 1300</span> <span class="discount">-20%</span></div>
+                </div>
+                <div class="category">
+                    <img src="formatprinter.jpg" alt="Bestsellers">
+                    <p>1.8m format printer</p>
+                    <div class="price">Ksh 450,200<span class="original-price">Ksh 463,300</span> <span class="discount">-20%</span></div>
+                </div>
+                <div class="category">
+                    <img src="besthp.jpg" alt="Bestsellers">
+                    <p>HP laptop </p>
+                    <div class="price">Ksh 45200<span class="original-price">Ksh 63,300</span> <span class="discount">-20%</span></div>
+                </div>
+                <div class="category">
+                    <img src="lagerprinter.jpg" alt="Bestsellers">
+                    <p>Laser Printer</p>
+                    <div class="price">Ksh 450,200<span class="original-price">Ksh 463,300</span> <span class="discount">-20%</span></div>
+                </div>
+        
+                <div class="category">
+                    <img src="litehp.jpg" alt="Seasonal">
+                    <p>Laser Printer</p>
+                    <div class="price">Ksh 450,000<span class="original-price">Ksh 500,000</span> <span class="discount">-20%</span></div>
+                </div>
+                <div class="category">
+                    <img src="lightkey.jpg" alt="Category">
+                    <p>Lite Keyboard</p>
+                    <div class="price">Ksh 10,000<span class="original-price">Ksh 15,000</span> <span class="discount">-20%</span></div>
+                </div>
+                <div class="category">
+                    <img src="besthp.jpg" alt="Outlet">
+                    <p>Hp laptop</p>
+                    <div class="price">Ksh 90,000<span class="original-price">Ksh 99,000</span> <span class="discount">-20%</span></div>
+                </div>
+                <div class="category">
+                    <img src="gmouse.jpg" alt="Category">
+                    <p>Mouse</p>
+                    <div class="price">Ksh 450<span class="original-price">Ksh 500</span> <span class="discount">-20%</span></div>
+                </div>
+                <div class="category">
+                    <img src="key.jpg" alt="Outlet">
+                    <p>Kyboard</p>
+                    <div class="price">Ksh 4500<span class="original-price">Ksh 5000</span> <span class="discount">-20%</span></div>
+                </div>
+                <div class="category">
+                    <img src="mouse.jpg" alt="Category">
+                    <p>Mouse</p>
+                    <div class="price">Ksh 450<span class="original-price">Ksh 500,</span> <span class="discount">-20%</span></div>
+                </div> 
+                <div class="category">
+                    <img src="colorlaserjet.jpg" alt="Category">
+                    <p>Color Laser Printer</p>
+                    <div class="price">Ksh 450,000<span class="original-price">Ksh 500,000</span> <span class="discount">-20%</span></div>
+                </div> 
+        </div>
+        <div class="container4">
+            <!-- Newsletter Section -->
+            <section class="newsletter4">
+                <h2>Grab an extra 5% discount</h2>
+                <p>Subscribe to monthly newsletter. Get the latest product updates and special offers delivered right to your inbox.</p>
+                <div class="subscription4">
+                    <input type="email" placeholder="Enter your email">
+                    <button type="submit">SUBSCRIBE</button>
+                </div>
+            </section>
+    
+            <!-- Reviews Section -->
+            <section class="reviews4">
+                <div class="review4">
+                    <h3>Our Rating</h3>
+                    <div class="stars4">
+                        ★★★★☆
+                    </div>
+                    <p>Based on 2303 reviews</p>
+                </div>
+                <div class="review4">
+                    <h3>Great value and quality</h3>
+                    <div class="stars4">
+                        ★★★★★
+                    </div>
+                    <p>I did not except to receive my keyboar within 5 hrs...</p>
+                    <p><strong>Beautrice Kathure</strong></p>
+                </div>
+                <div class="review4">
+                    <h3>Beautiful design!</h3>
+                    <div class="stars4">
+                        ★★★★☆
+                    </div>
+                    <p>FAM is better , I like their shipping , quality product...</p>
+                    <p><strong>Javason Mwirigi, 6 days ago</strong></p>
+                </div>
+                <div class="review4">
+                    <h3>Exactly what I wanted</h3>
+                    <div class="stars4">
+                        ★★★★☆
+                    </div>
+                    <p>Bought my hp laptop from FAM store and within 24hrs i had it...</p>
+                    <p><strong>Mercy Mwendwa, 6 days ago</strong></p>
+                </div>
+            </section>
+        </div>
+            <!-- Footer Section -->
+            <footer>
+                <div class="footer-section">
+                    <h4>Need help?</h4>
+                    <button>Contact Us</button>
+                </div>
+                <div class="footer-section">
+                    <h4>Customer Support</h4>
+                    <ul>
+                        <li>Returns & Warranty</li>
+                        <li>Payments</li>
+                        <li>Shipping</li>
+                        <li>Terms of Service</li>
+                        <li>Privacy Policy</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Corporate Info</h4>
+                    <ul>
+                        <li>About Us</li>
+                        <li>Brands</li>
+                        <li>Affiliates</li>
+                        <li>Investors</li>
+                        <li>Cookies</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Gift Card</h4>
+                    <ul>
+                        <li>Buy Gift cards</li>
+                        <li>Redeem Card</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Location</h4>
+                    <img src="kenyaflag.png" alt="" id="flag"><p>Bungoma Kenya</p>
+                    <div class="social-media">
+                        <a href="#">Instagram</a>
+                        <a href="#">Facebook</a>
+                        <a href="#">YouTube</a>
+                        <a href="#">X</a>
+                    </div>
+                </div>
+                <p style="color: white;font-size: 16px;text-align: center;">© 2024  Christopher Bundi</p>
+            </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
