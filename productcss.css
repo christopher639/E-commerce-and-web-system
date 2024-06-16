@@ -1,0 +1,277 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+}
+.product-section{
+    margin: 30px;
+}
+.header-container h1 {
+    color: #28a745;
+}
+
+header input[type="text"] {
+    width: 300px;
+    padding: 5px;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+}
+
+.icons span {
+    margin-left: 20px;
+    position: relative;
+}
+
+.notifications::after, .cart::after {
+    content: attr(data-count);
+    background: red;
+    color: white;
+    font-size: 12px;
+    padding: 2px 5px;
+    border-radius: 50%;
+    position: absolute;
+    top: -5px;
+    right: -10px;
+}
+
+nav {
+    background-color: #f8f9fa;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+main {
+    padding: 20px;
+}
+
+.breadcrumbs {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.breadcrumbs a {
+    color: #28a745;
+    text-decoration: none;
+}
+
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.product-images {
+    flex: 1;
+    margin-right: 20px;
+    min-width: 300px;
+}
+
+
+.thumbnail-images {
+    display: flex;
+}
+
+.thumbnail {
+    width: 60px;
+    height: 60px;
+    background-color: #f0f0f0;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.thumbnail.selected {
+    border: 2px solid #28a745;
+}
+
+.product-details {
+    flex: 2;
+    min-width: 300px;
+}
+
+.product-details h2 {
+    margin: 0;
+    color: #28a745;
+}
+
+.product-details p {
+    color: #666;
+}
+
+.price {
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+}
+
+.current-price {
+    font-size: 24px;
+    color: #28a745;
+    margin-right: 10px;
+}
+
+.original-price {
+    font-size: 18px;
+    text-decoration: line-through;
+    margin-right: 10px;
+}
+
+.discount {
+    font-size: 18px;
+    color: #dc3545;
+}
+
+.price-excl-taxes {
+    font-size: 14px;
+    color: #666;
+    margin-top: 5px;
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.stars {
+    color: #ffcc00;
+    margin-right: 5px;
+}
+
+.reviews {
+    font-size: 14px;
+    color: #666;
+}
+
+.color-selector {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.color-selector span {
+    margin-right: 5px;
+}
+
+.color {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.color-selector a {
+    color: #28a745;
+    text-decoration: none;
+}
+
+.availability {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.status {
+    color: #28a745;
+    margin-right: 10px;
+}
+
+.shipping {
+    font-size: 14px;
+    color: #666;
+}
+
+.add-to-cart {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.add-to-cart:hover {
+    background-color: #218838;
+}
+
+.product-description {
+    margin-top: 20px;
+}
+
+.product-description p {
+    color: #666;
+}
+
+.product-description ul {
+    list-style: none;
+    padding: 0;
+}
+
+.product-description ul li {
+    background: url('checkmark.png') no-repeat left center;
+    padding-left: 20px;
+    margin: 10px 0;
+    color: #666;
+}
+
+@media (max-width: 768px) {
+    .product-container {
+        flex-direction: column;
+    }
+
+    .product-images {
+        margin-right: 0;
+    }
+
+    .add-to-cart {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header input[type="text"] {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .icons {
+        margin-top: 10px;
+    }
+}
+

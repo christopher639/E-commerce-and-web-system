@@ -5,25 +5,16 @@ body {
     justify-content: center;
     align-items: center;
     height: 88vh;
-    margin: 8px;
-    background: linear-gradient(
-        45deg, 
-        #4c794c 25%, 
-        #008000 25%, 
-        #008000 50%, 
-        #1e591e 50%, 
-        #00ff84 75%, 
-        #008000 75%, 
-        #008000 100%
-    );
+    margin: 2px;
 }
 
 .container {
     background-color: #fff;
-    padding: 20px;
+    padding: 10px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 350px;
+    height: 100%;
 }
 .form-container {
     text-align: center;

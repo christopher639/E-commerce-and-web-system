@@ -3,81 +3,135 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Horizontal Scrollable Boxes</title>
+    <title>Shopping Cart Demo</title>
     <style>
         body {
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            overflow: hidden; /* Hide any overflow on the body */
+            background-color: #f4f4f4;
         }
-        .hidden{
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1em;
+            text-align: center;
+        }
+
+        .cart {
+            margin-top: 1em;
+        }
+
+        main {
             display: flex;
-            flex-wrap: nowrap;
-            overflow-x: scroll;
-            overflow-y: hidden; /* Hide vertical scrollbar */
-            width: 100%;
-            padding: 10px;
-            box-sizing: border-box;
-            -ms-overflow-style: none;  /* IE and Edge */
-            scrollbar-width: none;  /* Firefox */
-        }
-        .hidden::-webkit-scrollbar {
-            display: none;  /* Chrome, Safari, and Opera */
-        }
-        .prod {
-            flex: 0 0 auto;
-            
-            height: 150px;
-            margin: 10px;
-            border-radius: 5px;
-            background-color: green;
-            display: flex;
-            align-items: center;
             justify-content: center;
-            color: green;
-            font-size: 30px;
-            border: 1px solid green;
+            margin-top: 2em;
+        }
 
-            margin: 2px;
+        .product, .cart-item {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin: 0 1em;
+            padding: 1em;
+            text-align: center;
+            width: 200px;
+        }
 
-            background-color: white;
-             padding: 20px;
-             
-              box-shadow: 0 0 10px rgba(0,0,0,0.1);
-             border: 1px solid green;
+        .add-to-cart-btn {
+            background-color: #28a745;
+            border: none;
+            border-radius: 5px;
+            color: #fff;
+            cursor: pointer;
+            padding: 0.5em 1em;
+        }
+
+        .add-to-cart-btn:hover {
+            background-color: #218838;
+        }
+
+        #cart-page {
+            display: none;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #cart-items {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 1em;
         }
     </style>
 </head>
 <body>
-    <div class="hidden">
-        <div class="prod">laptop</div>
-        <div class="prod">laptop</div>
-        <div class="prod">laptop</div>
-        <div class="prod">laptiiiiiiiop</div>
-        <div class="prod">laptop</div>
-        <div class="prod">laptop</div>
-        <div class="prod">laptop</div>
-        <div class="prod">laptop</div>
-        <div class="prod">laptop</div>
-        <div class="prod">laptop</div>
-        <div class="prod">laptop</div>
-        <div class="prod">laptop</div>
-        <div class="prod">laptop</div>
-        <div class="prod">laptop</div>
-        <div class="prod">laptop</div>
-        <div class="prod">laptop</div>
-        <div class="prod">laptiiiiiiiop</div>
-        <div class="prod">laptop</div>
-        <div class="prod">laptop</div>
-        <div class="prod">laptop</div>
-        <div class="prod">laptop</div>
-        <div class="prod">laptop</div>
-        <div class="prod">laptop</div>
-        <div class="prod">laptop</div>
-        <div class="prod">laptop</div>
-        <div class="prod">laptop</div>
-       
-       
-    </div>
+    <header>
+        <h1>Shopping Cart</h1>
+        <div class="cart">
+            <span id="cart-count">0</span> items in cart
+            <button onclick="showCartPage()">View Cart</button>
+        </div>
+    </header>
+
+    <main id="products-page">
+        <div class="product">
+            <h2>Product 1</h2>
+            <p>Price: $10.00</p>
+            <p>Description: This is product 1.</p>
+            <button class="add-to-cart-btn" onclick="addToCart('Product 1', 10.00, 'This is product 1.')">Add to Cart</button>
+        </div>
+        <div class="product">
+            <h2>Product 2</h2>
+            <p>Price: $20.00</p>
+            <p>Description: This is product 2.</p>
+            <button class="add-to-cart-btn" onclick="addToCart('Product 2', 20.00, 'This is product 2.')">Add to Cart</button>
+        </div>
+    </main>
+
+    <main id="cart-page">
+        <h2>Your Cart</h2>
+        <div id="cart-items"></div>
+        <h3>Total Price: $<span id="total-price">0.00</span></h3>
+        <button onclick="showProductsPage()">Continue Shopping</button>
+    </main>
+
+    <script>
+        let cartCount = 0;
+        const cartItems = [];
+        let totalPrice = 0;
+
+        function addToCart(productName, productPrice, productDescription) {
+            cartCount++;
+            document.getElementById('cart-count').innerText = cartCount;
+            cartItems.push({ name: productName, price: productPrice, description: productDescription });
+            totalPrice += productPrice;
+         
+            updateCartPage();
+        }
+
+        function updateCartPage() {
+            const cartItemsContainer = document.getElementById('cart-items');
+            cartItemsContainer.innerHTML = '';
+            cartItems.forEach(item => {
+                const itemElement = document.createElement('div');
+                itemElement.className = 'cart-item';
+                itemElement.innerHTML = `<h3>${item.name}</h3><p>Price: $${item.price.toFixed(2)}</p><p>${item.description}</p>`;
+                cartItemsContainer.appendChild(itemElement);
+            });
+            document.getElementById('total-price').innerText = totalPrice.toFixed(2);
+        }
+
+        function showCartPage() {
+            document.getElementById('products-page').style.display = 'none';
+            document.getElementById('cart-page').style.display = 'flex';
+        }
+
+        function showProductsPage() {
+            document.getElementById('products-page').style.display = 'flex';
+            document.getElementById('cart-page').style.display = 'none';
+        }
+    </script>
 </body>
 </html>
