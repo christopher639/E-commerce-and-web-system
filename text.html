@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horizontal Scrollable Boxes</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden; /* Hide any overflow on the body */
+        }
+        .hidden{
+            display: flex;
+            flex-wrap: nowrap;
+            overflow-x: scroll;
+            overflow-y: hidden; /* Hide vertical scrollbar */
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+            -ms-overflow-style: none;  /* IE and Edge */
+            scrollbar-width: none;  /* Firefox */
+        }
+        .hidden::-webkit-scrollbar {
+            display: none;  /* Chrome, Safari, and Opera */
+        }
+        .prod {
+            flex: 0 0 auto;
+            
+            height: 150px;
+            margin: 10px;
+            border-radius: 5px;
+            background-color: green;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: green;
+            font-size: 30px;
+            border: 1px solid green;
+
+            margin: 2px;
+
+            background-color: white;
+             padding: 20px;
+             
+              box-shadow: 0 0 10px rgba(0,0,0,0.1);
+             border: 1px solid green;
+        }
+    </style>
+</head>
+<body>
+    <div class="hidden">
+        <div class="prod">laptop</div>
+        <div class="prod">laptop</div>
+        <div class="prod">laptop</div>
+        <div class="prod">laptiiiiiiiop</div>
+        <div class="prod">laptop</div>
+        <div class="prod">laptop</div>
+        <div class="prod">laptop</div>
+        <div class="prod">laptop</div>
+        <div class="prod">laptop</div>
+        <div class="prod">laptop</div>
+        <div class="prod">laptop</div>
+        <div class="prod">laptop</div>
+        <div class="prod">laptop</div>
+        <div class="prod">laptop</div>
+        <div class="prod">laptop</div>
+        <div class="prod">laptop</div>
+        <div class="prod">laptiiiiiiiop</div>
+        <div class="prod">laptop</div>
+        <div class="prod">laptop</div>
+        <div class="prod">laptop</div>
+        <div class="prod">laptop</div>
+        <div class="prod">laptop</div>
+        <div class="prod">laptop</div>
+        <div class="prod">laptop</div>
+        <div class="prod">laptop</div>
+        <div class="prod">laptop</div>
+       
+       
+    </div>
+</body>
+</html>
