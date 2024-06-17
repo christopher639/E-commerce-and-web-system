@@ -41,3 +41,5 @@ document.addEventListener('DOMContentLoaded', (event) => {
         console.error("All products not found");
     }
 });
+
+

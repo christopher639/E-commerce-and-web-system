@@ -62,10 +62,11 @@
                             </ul>
                         </li>
                     <span class="icon">
-                        <a href="#">
+                        <a href="cart.html">
                             <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="white"><path d="M280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM246-720l96 200h280l110-200H246Zm-38-80h590q23 0 35 20.5t1 41.5L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68-39.5t-2-78.5l54-98-144-304H40v-80h130l38 80Zm134 280h280-280Z"/></svg>
                         </a>
-                        <span class="badge">0</span></span>
+                        <span id="badge-counter">0</span></span>
+                     
                 </div>
             </ul>
         </nav>
@@ -83,12 +84,12 @@
             <a href="signin.html">
                 <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="white"><path d="M234-276q51-39 114-61.5T480-360q69 0 132 22.5T726-276q35-41 54.5-93T800-480q0-133-93.5-226.5T480-800q-133 0-226.5 93.5T160-480q0 59 19.5 111t54.5 93Zm246-164q-59 0-99.5-40.5T340-580q0-59 40.5-99.5T480-720q59 0 99.5 40.5T620-580q0 59-40.5 99.5T480-440Zm0 360q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q53 0 100-15.5t86-44.5q-39-29-86-44.5T480-280q-53 0-100 15.5T294-220q39 29 86 44.5T480-160Zm0-360q26 0 43-17t17-43q0-26-17-43t-43-17q-26 0-43 17t-17 43q0 26 17 43t43 17Zm0-60Zm0 360Z"/></svg>
             </a>
-            <div class="cart-icon">
+            <div id="cart-icon">
                     <span class="icon">
-                        <a href="#">
+                        <a href="cart.html">
                             <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="white"><path d="M280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM246-720l96 200h280l110-200H246Zm-38-80h590q23 0 35 20.5t1 41.5L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68-39.5t-2-78.5l54-98-144-304H40v-80h130l38 80Zm134 280h280-280Z"/></svg>
                         </a>
-                        <span class="badge">0</span></span>
+                        <span id="badge-counter">0</span></span>
             </div>
         </div>
         <section class="hero">
@@ -96,6 +97,11 @@
         </section>
         <div class="scroll">
         </div>
+        <style>
+            .product-section{
+                margin-top: -50px;
+            }
+        </style>
         <section class="product-section">
         
             <div class="breadcrumbs">
@@ -106,7 +112,7 @@
             <div class="product-container">
                 <div class="product-images">
                     <div class="category">
-                        <img src="besthp.jpg" alt="" class="main">
+                        <img src="besthp.jpg" alt="">
                     </div>
                     <div class="thumbnail-images">
                         <div class="thumbnail selected"></div>
@@ -114,41 +120,45 @@
                     </div>
                 </div>
                 <div class="product-details">
-                    <h2>HP laptop</h2>
-                    <p>16GBRAM, 512GB Rom, 16inchs</p>
-                    <div class="price">
-                        <span class="current-price">ksh95,000</span>
-                        <span class="original-price">$104,500</span>
-                        <span class="discount">-20%</span>
-                    </div>
-                    <div class="price-excl-taxes">ks750.50 excl taxes</div>
-                    <div class="rating">
-                        <span class="stars">★★★★★</span>
-                        <span class="reviews">(12)</span>
-                    </div>
-                    <div class="color-selector">
-                        <span>Color:</span>
-                        <span class="color">Blue</span>
-                        <a href="#">Change</a>
-                    </div>
-                    <div class="availability">
-                        <span class="status">Available</span>
-                        <span class="shipping">Shipping within 3-4 days</span>
-                    </div>
-                    <button class="add-to-cart">ADD TO CART</button>
-                    <div class="product-description">
-                        <p>Cart Not working</p>
-                        <ul>
-                            <li>System is under development</li>
-                            <li>Christpher bundi is the designer</li>
-                            <li>developmer</li>
-                            <li>And owner of the system</li>
-                        </ul>
-                    </div>
+                    <h1>HP Laptop</h1>
+                    <p class="description">16GBRAM, 512GB Rom, 16inchs</p>
+                    <p class="price">ksh95000 <span class="old-price">ksh105000</span> <span class="discount">-20%</span></p>
+                    <p class="price-excl-taxes">ksh750.50 excl taxes</p>
+                    <div class="stars">★★★★☆ (12)</div>
+                    <div class="color">Color: <span class="color-value">Black</span> <a href="#" class="change-color">Change</a></div>
+                    <button  onclick="counter()" id="add-to-cart" >Add to Cart</button>
+                    <p class="availability">Available</p>
+                    <p class="shipping">Shipping within 3-4 days</p>
+
+                </div>
+            </div>
+           <section id="cart" >
+            <div class="cart-summary" id="cart-summary">
+                <h2>Cart Summary</h2>
+                <div class="cart-items" id="cart-items">
+                    <!-- Items will be added here dynamically -->
+                </div>
+                <div class="order-total" id="order-total" data-total="0">
+                    <!-- Order total will be updated here dynamically -->
                 </div>
             </div>
            </section>
+        </div>
 
+        <div id="cart-page">
+            <a href="#" class="back-to-products" id="back-to-products">Back to Shop</a>
+            <h2>Shopping Cart</h2>
+            <div class="cart-items" id="cart-page-items">
+                <!-- Cart items will be displayed here -->
+            </div>
+           
+            <div class="discount-code">
+                <a href="#">DISCOUNT CODE / GIFT CARD</a>
+            </div>
+        </div>
+           </section>
+    </div>
+   
            <h3 style="margin-left: 20px;">Scoll Left to check Related Products</h3>
            <div class="hidden">
             <a href="product.html">
@@ -380,5 +390,122 @@
             </footer>
 
     <script src="script.js"></script>
+    <script>
+        let count = 0;
+       function counter(){
+       count ++;
+       document.getElementById('badge-counter').innerText = count;
+       }  
+
+   const cart = [];
+
+   document.getElementById('add-to-cart').addEventListener('click', function() {
+       const productName = 'HP 360 Convertible';
+       const productDescription = '512 GB ROM 16GB RAM';
+       const productPrice = 95000;
+       const productColor = 'Silver in color';
+
+       const cartItem = {
+           name: productName,
+           description: productDescription,
+           price: productPrice,
+           color: productColor,
+           quantity: 1
+       };
+
+       cart.push(cartItem);
+       updateCartSummary();
+   });
+
+   document.getElementById('cart-link').addEventListener('click', function() {
+       document.getElementById('product-page').style.display = 'none';
+       document.getElementById('cart-page').style.display = 'block';
+       displayCartPage();
+   });
+
+   document.getElementById('back-to-products').addEventListener('click', function() {
+       document.getElementById('product-page').style.display = 'block';
+       document.getElementById('cart-page').style.display = 'none';
+   });
+
+   document.getElementById('products-link').addEventListener('click', function() {
+       document.getElementById('product-page').style.display = 'block';
+       document.getElementById('cart-page').style.display = 'none';
+   });
+
+   function updateCartSummary() {
+       const cartItemsContainer = document.getElementById('cart-items');
+       const orderTotalContainer = document.getElementById('order-total');
+
+       cartItemsContainer.innerHTML = '';
+       let total = 0;
+
+       cart.forEach(item => {
+           const cartItemElement = document.createElement('div');
+           cartItemElement.className = 'cart-item';
+           cartItemElement.innerHTML = `
+               <h3>${item.name}</h3>
+               <p>${item.description}</p>
+               <p>Color: ${item.color}</p>
+               <p>Price: ksh${item.price}</p>
+           `;
+           cartItemsContainer.appendChild(cartItemElement);
+           total += item.price;
+       });
+
+       orderTotalContainer.setAttribute('data-total', total);
+       orderTotalContainer.innerHTML = `Order Total: Ksh${total.toFixed(2)}`;
+   }
+
+   function displayCartPage() {
+       const cartItemsContainer = document.getElementById('cart-page-items');
+       const itemsInCart = document.getElementById('items-in-cart');
+       const savingsApplied = document.getElementById('savings-applied');
+       const cartPageTotal = document.getElementById('cart-page-total');
+
+       cartItemsContainer.innerHTML = '';
+       let total = 0;
+       let savings = 0;
+
+       cart.forEach(item => {
+           const cartItemElement = document.createElement('div');
+           cartItemElement.className = 'cart-item';
+           cartItemElement.innerHTML = `
+               <h3>${item.name}</h3>
+               <p>${item.description}</p>
+               <p>Color: ${item.color}</p>
+               <div class="quantity">
+                   <button onclick="updateQuantity(${cart.indexOf(item)}, -1)">-</button>
+                   <input type="text" value="${item.quantity}" readonly>
+                   <button onclick="updateQuantity(${cart.indexOf(item)}, 1)">+</button>
+               </div>
+               <p>Price: Ksh${(item.price * item.quantity).toFixed(2)}</p>
+               <button class="remove" onclick="removeFromCart(${cart.indexOf(item)})">Remove</button>
+           `;
+           cartItemsContainer.appendChild(cartItemElement);
+           total += item.price * item.quantity;
+       });
+
+       savings = 25; // assuming a fixed savings value for illustration
+       const discountedTotal = total - savings;
+
+       itemsInCart.innerHTML = `$${total.toFixed(2)}`;
+       savingsApplied.innerHTML = `-$${savings.toFixed(2)}`;
+       cartPageTotal.innerHTML = `$${discountedTotal.toFixed(2)}`;
+   }
+
+   function updateQuantity(index, change) {
+       if (cart[index].quantity + change > 0) {
+           cart[index].quantity += change;
+           displayCartPage();
+       }
+   }
+
+   function removeFromCart(index) {
+       cart.splice(index, 1);
+       displayCartPage();
+   }
+
+</script>
 </body>
 </html>
